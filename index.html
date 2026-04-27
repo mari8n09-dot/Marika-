@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Marika • Инфографика и SEO для Wildberries</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      overflow-x: hidden;
+      width: 100%;
+    }
+
+    .ultimate-green-shimmer {
+      background: linear-gradient(90deg, #10b981, #34d399, #10b981, #ffffff, #10b981);
+      background-size: 400% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: ultimateShimmer 6s linear infinite;
+    }
+    @keyframes ultimateShimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+
+    /* точечки в бейдже */
+    .dot-divider {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #10b981;
+      display: inline-block;
+    }
+
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #ffffff;
+      color: #000000;
+      padding: 14px 28px;
+      border-radius: 16px;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: transform 0.15s, box-shadow 0.15s;
+      text-decoration: none;
+    }
+    .cta-btn:active { transform: scale(0.97); box-shadow: 0 0 0 3px #10b98140; }
+    @media (hover: hover) {
+      .cta-btn:hover { transform: scale(1.04); box-shadow: 0 0 0 3px #10b98140; }
+    }
+
+    .section-pad {
+      padding-top: 56px;
+      padding-bottom: 56px;
+    }
+    @media (min-width: 768px) {
+      .section-pad { padding-top: 80px; padding-bottom: 80px; }
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    @media (min-width: 480px) { .services-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 768px) { .services-grid { grid-template-columns: 1fr 1fr 1fr; } }
+  </style>
+</head>
+
+<body class="bg-zinc-950 text-white">
+
+  <!-- HERO -->
+  <section class="relative min-h-[100svh] flex items-center justify-center overflow-hidden px-5 py-16">
+    <div class="absolute inset-0 hero-radial pointer-events-none"></div>
+    <div class="relative z-10 w-full max-w-2xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 bg-zinc-900 border border-zinc-800 rounded-full px-4 py-1.5 mb-6 text-xs text-zinc-400">
+        <span class="dot-divider"></span>
+        Wildberries • Эксперт
+        <span class="dot-divider"></span>
+      </div>
+      <h1 class="font-bold tracking-tight leading-[1.1] mb-5 text-[clamp(2rem,9vw,4.5rem)]">
+        Инфографика и SEO,<br>которые <span class="ultimate-green-shimmer">продают</span>
+      </h1>
+      <p class="text-zinc-400 mb-8 mx-auto max-w-xs text-[clamp(0.9rem,4vw,1.15rem)] leading-relaxed">
+        Создаю карточки, которые имеют силу и преимущество.<br>
+        Стратегический подход SEO и полное видение системы.
+      </p>
+      <a href="#services" class="cta-btn">
+        Выбрать услугу →
+      </a>
+      <p class="text-zinc-500 mt-6 text-sm">Мария • Эксперт SEO</p>
+      <div class="mt-10">
+        <p class="ultimate-green-shimmer font-bold tracking-widest text-[clamp(1.2rem,6vw,2.5rem)]">
+          ИНФОГРАФИКА SEO ВИДЕО
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- РЕЗУЛЬТАТЫ -->
+  <section class="section-pad bg-zinc-900">
+    <div class="max-w-2xl mx-auto px-4">
+      <h2 class="font-bold text-center mb-8 text-[clamp(1.5rem,6vw,2.25rem)]">
+        Что я уже сделала для клиентов
+      </h2>
+      <div class="grid grid-cols-3 gap-3 sm:gap-6">
+        <div class="stat-card">
+          <div class="font-bold text-[#10b981] text-[clamp(1.4rem,6vw,2.5rem)] leading-tight">+340%</div>
+          <p class="text-zinc-400 text-center leading-snug text-[clamp(0.65rem,2.8vw,0.875rem)]">рост продаж по карточке</p>
+        </div>
+        <div class="stat-card">
+          <div class="font-bold text-[#10b981] text-[clamp(1.1rem,5vw,2.5rem)] leading-tight">1 место</div>
+          <p class="text-zinc-400 text-center leading-snug text-[clamp(0.65rem,2.8vw,0.875rem)]">в поиске WB</p>
+        </div>
+        <div class="stat-card">
+          <div class="font-bold text-[#10b981] text-[clamp(1rem,4.5vw,2.5rem)] leading-tight">2.8 млн</div>
+          <p class="text-zinc-400 text-center leading-snug text-[clamp(0.65rem,2.8vw,0.875rem)]">показов инфографики</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ЭКСПЕРТИЗА -->
+  <section class="section-pad bg-zinc-900">
+    <div class="max-w-2xl mx-auto px-4">
+      <h2 class="font-bold text-center mb-3 text-[clamp(1.5rem,6vw,2.25rem)]">Видение системы</h2>
+      <p class="text-zinc-400 text-center mb-8 text-[clamp(0.85rem,3.5vw,1rem)]">Работаю на стыке дизайна, SEO и аналитики — понимаю полный цикл.</p>
+      <div class="expertise-list">
+        <div class="expertise-item">🎯 <div><p class="font-semibold">SEO-стратегия</p><p class="text-zinc-400 text-xs sm:text-sm mt-0.5">Семантическое ядро, кластеризация, внедрение ключей без потери смысла.</p></div></div>
+        <div class="expertise-item">🖼️ <div><p class="font-semibold">Инфографика</p><p class="text-zinc-400 text-xs sm:text-sm mt-0.5">Карточки, которые выделяются в поиске и конвертируют клик в покупку.</p></div></div>
+        <div class="expertise-item">📊 <div><p class="font-semibold">Аналитика и рост</p><p class="text-zinc-400 text-xs sm:text-sm mt-0.5">Отслеживаю CTR, позиции и конверсию — корректирую на основе данных.</p></div></div>
+        <div class="expertise-item">🎬 <div><p class="font-semibold">Видео для карточки</p><p class="text-zinc-400 text-xs sm:text-sm mt-0.5">Продающие видеослайды и анимации, повышающие время просмотра.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- УСЛУГИ -->
+  <section id="services" class="section-pad bg-zinc-950">
+    <div class="max-w-2xl mx-auto px-4">
+      <h2 class="font-bold text-center mb-3 text-[clamp(1.5rem,6vw,2.25rem)]">Услуги</h2>
+      <p class="text-zinc-400 text-center mb-8 text-[clamp(0.85rem,3.5vw,1rem)]">Выбери формат сотрудничества, который подходит тебе.</p>
+      <div class="services-grid">
+        <div class="service-card">🖼️ <p class="font-semibold text-sm sm:text-base mb-1">Инфографика под ключ</p><p class="text-zinc-400 text-xs sm:text-sm">До 8 слайдов с анализом конкурентов, структурой и продающим дизайном.</p></div>
+        <div class="service-card">🔍 <p class="font-semibold text-sm sm:text-base mb-1">SEO-оптимизация</p><p class="text-zinc-400 text-xs sm:text-sm">Заголовок, описание, характеристики. Рост позиций в поиске WB.</p></div>
+        <div class="service-card">🎬 <p class="font-semibold text-sm sm:text-base mb-1">Видео для карточки</p><p class="text-zinc-400 text-xs sm:text-sm">Продающее видео или анимированный слайдшоу под формат WB.</p></div>
+        <div class="service-card">📦 <p class="font-semibold text-sm sm:text-base mb-1">Полный пакет</p><p class="text-zinc-400 text-xs sm:text-sm">Инфографика + SEO + видео. Максимальный результат для карточки.</p></div>
+        <div class="service-card">📋 <p class="font-semibold text-sm sm:text-base mb-1">Аудит карточки</p><p class="text-zinc-400 text-xs sm:text-sm">Разбираю слабые места и даю конкретные рекомендации для роста.</p></div>
+        <div class="service-card">🤝 <p class="font-semibold text-sm sm:text-base mb-1">Сопровождение</p><p class="text-zinc-400 text-xs sm:text-sm">Ежемесячное ведение карточек: анализ, корректировка, рост.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA БАННЕР -->
+  <section class="section-pad bg-zinc-900">
+    <div class="max-w-2xl mx-auto px-4 text-center">
+      <div class="bg-zinc-950 border border-zinc-800 rounded-3xl px-6 py-10 sm:px-10 sm:py-12">
+        <p class="ultimate-green-shimmer font-bold mb-2 text-[clamp(0.7rem,3vw,0.9rem)] tracking-widest uppercase">Готова к сотрудничеству</p>
+        <h3 class="font-bold text-white mb-4 leading-tight text-[clamp(1.4rem,6vw,2.25rem)]">Консультация и дальнейшее сотрудничество</h3>
+        <p class="text-zinc-400 mb-8 max-w-xs mx-auto text-[clamp(0.85rem,3.5vw,1rem)]">План роста именно для твоего товара.</p>
+        <a href="https://vk.com/marika_seo" class="cta-btn justify-center mx-auto" style="width: fit-content;">Перейти в мою группу ВК →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER с твоими контактами -->
+  <footer class="bg-black py-10 px-4">
+    <div class="max-w-2xl mx-auto">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-6">
+        <p class="font-bold text-lg text-white tracking-tight">Marika <span class="text-[#10b981]">•</span></p>
+        
+        <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-zinc-400 text-sm">
+          <a href="https://t.me/Marika2311" target="_blank" rel="noopener" class="flex items-center gap-2 hover:text-emerald-400 transition-colors">
+            <i class="fab fa-telegram-plane"></i>
+            <span>Telegram @Marika2311</span>
+          </a>
+          <a href="https://vk.com/marikan2311" target="_blank" rel="noopener" class="flex items-center gap-2 hover:text-emerald-400 transition-colors">
+            <i class="fab fa-vk"></i>
+            <span>Профиль VK</span>
+          </a>
+          <a href="https://vk.com/marika_seo" target="_blank" rel="noopener" class="flex items-center gap-2 hover:text-emerald-400 transition-colors">
+            <i class="fab fa-vk"></i>
+            <span>Группа VK</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="border-t border-zinc-900 pt-6">
+        <p class="text-zinc-600 text-center text-xs sm:text-sm">© Marika • Все права защищены</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
